@@ -1,4 +1,5 @@
 
+
 # Neverminer - HiveOs Miner
 
 ## :warning: HiveOs Mandatory Installation Instructions
@@ -52,7 +53,7 @@ cd /opt/rocm/lib && wget https://github.com/Gddrig/Qubic_Hiveos/releases/downloa
 - **Extra config arguments**: `"wallet": YOUR_QUBIC_WALLET`
   
 
-### 🔨 GPU+CPU (Dual) mining:
+### 🔨 GPU  + CPU mining:
 ![Flight Sheet Dual](/img/FlightSheetDual.png)
 <br>
 > [!NOTE]
@@ -64,7 +65,7 @@ cd /opt/rocm/lib && wget https://github.com/Gddrig/Qubic_Hiveos/releases/downloa
 "amountOfThreads":0
 ```
 
-### 🔨 GPU mining:
+### 🔨 GPU  mining:
 ![Flight Sheet GPU](/img/FlightSheetGPU.png)
 <br>
 **Extra Config Arguments Example:**

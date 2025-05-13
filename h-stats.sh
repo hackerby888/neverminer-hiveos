@@ -74,7 +74,7 @@ extract_shares() {
 }
 
 # Extract version and runner information
-custom_version=v.3.1.1
+custom_version=v.3.3.4
 gpu_runner=$(tac "$log_name" | grep -m1 -Po "(?<=Trainer: ).*?cuda.*?(?:\d+(?:\.\d+)*)(?= is (starting|running))")
 cpu_runner=$(tac "$log_name" | grep -m1 -Po "(?<=Trainer: ).*?cpu.*?(?:\d+(?:\.\d+)*)(?= is (starting|running))")
 epoh_runner=$(grep -Po "E:\d+" "$log_name" | tail -n1)
