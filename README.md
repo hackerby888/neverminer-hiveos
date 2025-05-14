@@ -58,6 +58,7 @@ cd /opt/rocm/lib && wget https://github.com/Gddrig/Qubic_Hiveos/releases/downloa
 <br>
 > [!NOTE]
 >"amountOfThreads":0 will use all available threads minus one.
+> 
 >"pps":false will enable solo mode
 > 
 **Extra Config Arguments Example:**
