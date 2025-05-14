@@ -20,6 +20,11 @@ process_user_config() {
                 USERNAME=$value
                 continue
             fi
+            
+            if [[ "$param" == "pps" ]]; then
+                PPS=$value
+                continue
+            fi
 
             # Convert parameter to lowercase for cpuOnly check
             param_low=$(echo "$param" | tr '[:upper:]' '[:lower:]')
@@ -123,6 +128,11 @@ fi
 # Adding poolAddress settings
 if [[ ! -z $CUSTOM_URL ]]; then
     Settings=$(jq --arg poolAddress "$CUSTOM_URL/$USERNAME" '.poolAddress = $poolAddress' <<< "$Settings")
+fi
+
+# Adding pps settings
+if [[ ! -z $PPS ]]; then
+    Settings=$(jq --arg pps "$PPS" '.pps = $pps' <<< "$Settings")
 fi
 
 # Check and modify Settings for hugePages parameter
