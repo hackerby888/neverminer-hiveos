@@ -53,23 +53,26 @@ cd /opt/rocm/lib && wget https://github.com/Gddrig/Qubic_Hiveos/releases/downloa
 - **Extra config arguments**: `"wallet": YOUR_QUBIC_WALLET`
   
 
-### 🔨 GPU  + CPU mining:
+### 🔨 GPU  + CPU mining (Share Mode):
 ![Flight Sheet Dual](/img/FlightSheetDual.png)
 <br>
 > [!NOTE]
 >"amountOfThreads":0 will use all available threads minus one.
+>"pps":false will enable solo mode
 > 
 **Extra Config Arguments Example:**
 ```
 "wallet": YOUR_QUBIC_WALLET
 "amountOfThreads":0
+"pps":true
 ```
 
-### 🔨 GPU  mining:
+### 🔨 GPU  mining (Solo Mode):
 ![Flight Sheet GPU](/img/FlightSheetGPU.png)
 <br>
 **Extra Config Arguments Example:**
 ```
 "wallet": YOUR_QUBIC_WALLET
+"pps":false
 ```
 <!--
